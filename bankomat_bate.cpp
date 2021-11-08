@@ -40,7 +40,7 @@ int main()
 
 do
     {
-        cout << "Ââåäèòå ïèí-êîä:";
+        cout << "PIN for 4 account: ";
         cin>> pincode;
 
         if (pincode == pass[q])
@@ -53,7 +53,7 @@ do
     while (count<3);
     if (count == 3)
     {
-        cout << "êàðòî÷êà çàáëîêèðîâàíà!" << endl;
+        cout << "Card blocked!" << endl;
         system ("pause");
         return 0;
     }
@@ -61,18 +61,18 @@ else
     {
         start:
         system("cls");
-        cout << "1 - ïðîâåðèòü áàëàíñ" << endl;
-        cout << "2 - ñíÿòü íàëè÷íûå" << endl;
-        cout << "3 - ïîïîëíèòü íàëè÷íûå" << endl;
-        cout << "4 - âûõîä" << endl;
-        cout << "Âûáåðèòå îïåðàöèþ: " << endl;
+        cout << "1 - Ã¯Ã°Ã®Ã¢Ã¥Ã°Ã¨Ã²Ã¼ Ã¡Ã Ã«Ã Ã­Ã±" << endl;
+        cout << "2 - Ã±Ã­Ã¿Ã²Ã¼ Ã­Ã Ã«Ã¨Ã·Ã­Ã»Ã¥" << endl;
+        cout << "3 - Ã¯Ã®Ã¯Ã®Ã«Ã­Ã¨Ã²Ã¼ Ã­Ã Ã«Ã¨Ã·Ã­Ã»Ã¥" << endl;
+        cout << "4 - Ã¢Ã»ÃµÃ®Ã¤" << endl;
+        cout << "Ã‚Ã»Ã¡Ã¥Ã°Ã¨Ã²Ã¥ Ã®Ã¯Ã¥Ã°Ã Ã¶Ã¨Ã¾: " << endl;
         cin >> op;
         switch (op)
          {
             case 1:
                 {
                     system ("cls");
-                    cout << "Ó òåáÿ íà ñ÷åòó: " << balance[q] << " ãðèâåí!" << endl;
+                    cout << "Ã“ Ã²Ã¥Ã¡Ã¿ Ã­Ã  Ã±Ã·Ã¥Ã²Ã³: " << balance[q] << " Ã£Ã°Ã¨Ã¢Ã¥Ã­!" << endl;
                     system ("pause");
                     goto start;
                     break;
@@ -80,7 +80,7 @@ else
            case 2:
                 {
                     system ("cls");
-                    cout << "Ââåäèòå ñóììó: " << endl;
+                    cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã±Ã³Ã¬Ã¬Ã³: " << endl;
                     cin >> x;
                     balance[q] = balance[q] - x;
                     system ("pause");
@@ -100,7 +100,7 @@ else
             case 4:
                 {
                     system("cls");
-                    cout << "Âñåãî õîðîøåãî!" << endl;
+                    cout << "Ã‚Ã±Ã¥Ã£Ã® ÃµÃ®Ã°Ã®Ã¸Ã¥Ã£Ã®!" << endl;
                     system ("pause");
                     return 0;
                     break;
